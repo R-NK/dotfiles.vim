@@ -1,7 +1,9 @@
-set termguicolors
 set encoding=utf-8
 set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
-set termguicolors
+if has('termguicolors')
+	set termguicolors
+endif
+set t_Co=256
 set noswapfile
 set autoread
 set number "行番号を表示
@@ -11,7 +13,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set smartindent
-set t_Co=256
 set cursorline "現在の行を強調表示
 set wildmode=list:longest "コマンドラインの補完
 set showmatch "かっこ入力時に対応するかっこを強調表示
