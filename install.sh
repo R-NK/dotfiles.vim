@@ -6,7 +6,7 @@ git submodule update
 unameOut="$(uname -s)"
 case $unameOut in
 	Linux )	
-			target_vim="~/dotfiles.vim\.vim"
+			target_vim="~/dotfiles.vim/.vim"
 			link_vim="~/.vim"
 			target_vimrc="~/dotfiles.vim/.vimrc"
 			link_vimrc="~/.vimrc"
