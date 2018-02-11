@@ -1,0 +1,9 @@
+[submodule ".vim/bundle/Vundle.vim"]
+	path = .vim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim
+[submodule ".vim/bundle/tender.vim"]
+	path = .vim/bundle/tender.vim
+	url = https://github.com/jacoborus/tender.vim
+[submodule ".vim/bundle/lightline.vim"]
+	path = .vim/bundle/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
