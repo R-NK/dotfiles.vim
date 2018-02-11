@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd .vim
+cd ~/dotfiles.vim/.vim
 git submodule init
 git submodule update
 
