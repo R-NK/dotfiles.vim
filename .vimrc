@@ -7,7 +7,8 @@ set t_Co=256
 set noswapfile
 set autoread
 set number "行番号を表示
-set title
+set title "ファイル名を表示"
+
 syntax on
 set tabstop=4
 set shiftwidth=4
