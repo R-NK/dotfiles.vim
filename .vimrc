@@ -19,6 +19,8 @@ set wildmode=list:longest "コマンドラインの補完
 set showmatch "かっこ入力時に対応するかっこを強調表示
 set showcmd
 set laststatus=2
+let mapleader = "\<Space>"
+map <Leader> <Plug>(easymotion-prefix)
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -31,6 +33,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'jacoborus/tender.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'easymotion/vim-easymotion'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
