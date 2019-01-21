@@ -1,4 +1,4 @@
-@echo off
+﻿@echo off
 
 openfiles > NUL 2>&1
 if NOT %ERRORLEVEL% EQU 0 goto NotAdmin
@@ -16,10 +16,11 @@ cd /d %~dp0
 git submodule init
 git submodule update
 
-set target_vim="\dotfiles.vim\.vim"
+set pwd=%~dp0
+set target_vim="%pwd%.vim"
 set link_vim="\.vim"
-set target_vimrc="\dotfiles.vim\.vimrc"
+set target_vimrc="%pwd%.vimrc"
 set link_vimrc="\.vimrc"
-mklink /D "%USERPROFILE%%link_vim%" "%USERPROFILE%%target_vim%"
-mklink "%USERPROFILE%%link_vimrc%" "%USERPROFILE%%target_vimrc%"
+mklink /D "%USERPROFILE%%link_vim%" "%target_vim%"
+mklink "%USERPROFILE%%link_vimrc%" "%target_vimrc%"
 pause
