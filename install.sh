@@ -16,7 +16,7 @@ case $unameOut in
 	Linux )	
 		target_vim="/.vim"
 		target_vimrc="/.vimrc"
-		link_vim="/.vim"
+		link_vim="/"
 		link_vimrc="/.vimrc"
 		ln -s -f $PWD$target_vim $HOME$link_vim
 		ln -s -f $PWD$target_vimrc $HOME$link_vimrc ;;
